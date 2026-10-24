@@ -1,0 +1,1191 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>FORE School of Management</title>
+    <!-- scroolin css -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- csrf token start -->
+    <meta name="csrf-token" content="GZvLQU5iwOXQH10xXr20MaeFC8H3hHX65cFYEvqy">
+    <!-- csrf token end -->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://student.fsm.ac.in/asset/css/all.min.css">
+    <!--icofont.min.css.-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--font-family: 'Poppins', sans-serif; -->
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://student.fsm.ac.in/asset/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://student.fsm.ac.in/asset/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="https://student.fsm.ac.in/asset/css/style.css">
+    <link rel="stylesheet" href="https://student.fsm.ac.in/asset/css/responsive.css">
+
+    <!-- Global site tag (gtag.js) - Google Ads: 734576996 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-734576996"></script>
+
+    <style>
+        .sticky {
+            position: fixed;
+            top: 65px;
+
+            width: 100%;
+        }
+
+        .colr {
+            color: #0D99E0;
+        }
+
+        .mid-text {
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            font-family: 'latoblack';
+            letter-spacing: 1px;
+            padding: 5px 0;
+        }
+
+        .right-text {
+            text-align: center;
+            color: #000;
+            font-size: 18px;
+            letter-spacing: 1px;
+            padding: 5px 0;
+            font-style: italic;
+            font-family: Georgia, "Times New Roman", Times, serif;
+        }
+
+        .banner-strip {
+            width: 100%;
+            padding: 20px 15px 20px 15px;
+            background: rgba(0, 0, 0, 0.9);
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .strip-text {
+            color: #fff;
+            font-family: 'open_sanssemibold';
+            font-size: 20px;
+            text-align: justify;
+            width: 65%;
+            padding-left: 3.5%;
+            padding-top: 0px;
+        }
+
+        /* ══════════════════════════════
+           FULL LOGIN OVERLAY REDESIGN
+        ══════════════════════════════ */
+
+        /* Full viewport background */
+        section.four.forubxone {
+            position: fixed;
+            inset: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://student.fsm.ac.in/asset/images/Zoom_Background_Final-04.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            z-index: 0;
+            overflow-y: auto;
+        }
+
+        /* Hide the old img tag */
+        section.four.forubxone .fulbix {
+            display: none;
+        }
+
+        section.four.forubxone .rigoxa {
+            display: none;
+        }
+
+        section.four.forubxone > .container {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+        }
+
+        body#page-top {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* ── The card ── */
+        .banner-form {
+            width: 460px;
+            max-width: 96vw;
+            position: relative;
+            top: auto; right: auto;
+            margin: 0 auto;
+            padding: 0;
+            background: transparent;
+            border: none;
+            transform: none;
+        }
+
+        .form-card {
+            background: rgba(255, 255, 255, 0.97);
+            border-radius: 16px;
+            padding: 3rem 2.75rem 2.5rem;
+            box-shadow:
+                0 32px 80px rgba(0,0,0,0.45),
+                0 0 0 1px rgba(255,255,255,0.15),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            backdrop-filter: blur(20px);
+            animation: formSlideUp 0.6s cubic-bezier(0.22,1,0.36,1) both;
+        }
+
+        @keyframes  formSlideUp {
+            from { opacity: 0; transform: translateY(24px) scale(0.97); }
+            to   { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        /* Top accent bar */
+        .form-card::before {
+            content: '';
+            display: block;
+            width: 60px; height: 4px;
+            background: linear-gradient(90deg, #1a56db, #38bdf8);
+            border-radius: 4px;
+            margin: 0 auto 1.75rem;
+        }
+
+        .banner-form h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #0a2540;
+            text-align: center;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+        }
+
+        .banner-form .form-subtitle {
+            font-size: 0.78rem;
+            color: #94a3b8;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.02em;
+        }
+
+        /* Input wrapper */
+        .banner-form .input-group-custom {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .banner-form .input-group-custom .input-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #94a3b8;
+            font-size: 1rem;
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        .banner-form .text-filed {
+            width: 100%;
+            background: #f4f7ff;
+            border: 2px solid #e8edf8;
+            border-radius: 12px;
+            height: 54px;
+            padding: 0 16px 0 46px;
+            color: #0f172a;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s;
+            outline: none;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .banner-form .text-filed:focus {
+            border-color: #1a56db;
+            box-shadow: 0 0 0 4px rgba(26,86,219,0.1);
+            background: #fff;
+        }
+
+        .banner-form .text-filed::placeholder {
+            color: #b0bec5;
+            font-size: 0.85rem;
+            font-weight: 400;
+        }
+
+        .banner-form .sel-field {
+            width: 100%;
+            border: 2px solid #e8edf8;
+            border-radius: 12px;
+            height: 54px;
+            padding: 0 16px;
+            color: #0f172a;
+            margin: 0 0 1rem;
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.9rem;
+            background: #f4f7ff;
+        }
+
+        /* Error messages */
+        .banner-form span[id^="error"] {
+            font-size: 0.72rem;
+            color: #ef4444;
+            font-family: 'Poppins', sans-serif;
+            display: block;
+            margin: -0.5rem 0 0.6rem 4px;
+        }
+
+        .banner-form span[id^="success"] {
+            font-size: 0.72rem;
+            color: #16a34a;
+            font-family: 'Poppins', sans-serif;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Button */
+        .form-button {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .form-button #btn2,
+        .form-button #btn3,
+        .form-button #btn4 {
+            width: 100%;
+            height: 54px;
+            background: linear-gradient(135deg, #0b2d6e 0%, #1a56db 60%, #2563eb 100%);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            letter-spacing: 0.05em;
+            transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+            box-shadow: 0 6px 24px rgba(26,86,219,0.4);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-button #btn2::after,
+        .form-button #btn3::after,
+        .form-button #btn4::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%; width: 60%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .form-button #btn2:hover::after,
+        .form-button #btn3:hover::after,
+        .form-button #btn4:hover::after { left: 150%; }
+
+        .form-button #btn2:hover,
+        .form-button #btn3:hover,
+        .form-button #btn4:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 32px rgba(26,86,219,0.5);
+        }
+
+        .form-button input {
+            width: 100%;
+            height: 54px;
+            background: linear-gradient(135deg, #0b2d6e, #1a56db);
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 6px 24px rgba(26,86,219,0.4);
+        }
+
+        /* Forgot password link */
+        .banner-form a.forgot-password {
+            display: block;
+            text-align: center;
+            font-size: 0.82rem !important;
+            color: #1a56db !important;
+            font-family: 'Poppins', sans-serif;
+            text-decoration: none;
+            margin-top: 1rem;
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            transition: color 0.15s;
+        }
+
+        .banner-form a.forgot-password:hover { color: #0b2d6e !important; text-decoration: underline; }
+
+        /* Divider inside card */
+        .banner-form .form-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e8edf8, transparent);
+            margin-bottom: 1.75rem;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            section.four.forubxone {
+                min-height: unset !important;
+                height: auto !important;
+                padding: 1rem 0;
+                align-items: center;
+            }
+
+            section.four.forubxone > .container {
+                padding-top: 0;
+            }
+
+            section.four.forubxone .col-md-12 {
+                min-height: unset !important;
+                padding: 0 1rem;
+            }
+
+            .banner-form {
+                width: 100%;
+                max-width: 420px;
+                margin: 0 auto;
+            }
+
+            .form-card {
+                padding: 2rem 1.5rem 1.75rem;
+            }
+
+            .banner-form h2 { font-size: 1.4rem; }
+
+            .banner-form .text-filed,
+            .form-button #btn2,
+            .form-button #btn3,
+            .form-button #btn4 {
+                height: 48px;
+            }
+        }
+
+        .responsive {
+            width: 100%;
+            height: auto;
+        }
+
+        #top-form #loading_spinner {
+            display: none;
+        }
+
+        #loading_spinnerr {
+            display: none;
+        }
+
+        .footer-bottom p {
+            font-size: 14px;
+            color: #333333;
+            font-weight: normal;
+            font-family: 'Roboto-Light';
+            margin: 0px;
+            line-height: 14px;
+            padding: 15px 0px;
+        }
+
+        /* responsive handled in redesigned form section */
+
+        .blink {
+            animation: blink 3s infinite;
+        }
+
+        @keyframes  blink {
+            0% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+                transform: scale(2);
+            }
+
+            51% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /*CSS for Loader start*/
+        /* Absolute Center Spinner */
+        .loading {
+            position: fixed;
+            height: 2em;
+            width: 2em;
+            overflow: visible;
+            margin: auto;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 2000;
+        }
+
+        /* Transparent Overlay */
+        .loading:before {
+            content: '';
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* :not(:required) hides these rules from IE9 and below */
+        .loading:not(:required) {
+            /* hide "loading..." text */
+            font: 0/0 a;
+            color: transparent;
+            text-shadow: none;
+            background-color: transparent;
+            border: 0;
+        }
+
+        .loading:not(:required):after {
+            content: '';
+            display: block;
+            font-size: 10px;
+            width: 1em;
+            height: 1em;
+            margin-top: -0.5em;
+            -webkit-animation: spinner 1500ms infinite linear;
+            -moz-animation: spinner 1500ms infinite linear;
+            -ms-animation: spinner 1500ms infinite linear;
+            -o-animation: spinner 1500ms infinite linear;
+            animation: spinner 1500ms infinite linear;
+            border-radius: 0.5em;
+            -webkit-box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.5) -1.5em 0 0 0, rgba(0, 0, 0, 0.5) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+            box-shadow: rgba(0, 0, 0, 0.75) 1.5em 0 0 0, rgba(0, 0, 0, 0.75) 1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) 0 1.5em 0 0, rgba(0, 0, 0, 0.75) -1.1em 1.1em 0 0, rgba(0, 0, 0, 0.75) -1.5em 0 0 0, rgba(0, 0, 0, 0.75) -1.1em -1.1em 0 0, rgba(0, 0, 0, 0.75) 0 -1.5em 0 0, rgba(0, 0, 0, 0.75) 1.1em -1.1em 0 0;
+        }
+
+        /* Animation */
+        @-webkit-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @-o-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes  spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+                -moz-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                -o-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        /*CSS for Loader start*/
+    </style>
+
+</head>
+
+<body id="page-top container">
+
+    <!-- loader start -->
+    <div class="loading" style="display: none;">Loading&#8230;</div>
+    <!-- loader end -->
+
+    <!--start topnavbar -->
+
+    <!--end topnavbar -->
+
+    <!-- navbar hidden on login page -->
+    /* comment by sachin rana goes up inside div after </a> tage
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button> */
+
+    <!-- end navbar  -->
+    <div id="nav-sticky"></div>
+
+
+    <section class="four forubxone">
+        <img src="https://student.fsm.ac.in/asset/images/Zoom_Background_Final-04.jpg" alt="" class="fulbix">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-sm-12 col-xs-12 d-flex justify-content-center align-items-center" style="min-height:480px; padding:1rem 0;">
+
+                    <div style="width:100%;display:flex;justify-content:center;">
+
+
+
+                    <!-- Login form start -->
+                    <div id="login-form" class="banner-form" style="">
+                        <div class="form-card">
+                            <h2>Student Login</h2>
+                            <p class="form-subtitle">FORE School of Management · eCampus</p>
+                            <div class="form-divider"></div>
+
+                            <div class="input-group-custom">
+                                <span class="input-icon">&#128100;</span>
+                                <input class="text-filed" name="email" id="log_email" placeholder="Roll Number" type="text" required="">
+                            </div>
+                            <span id="errorLogEmail" style="color:red;"></span>
+
+                            <div class="input-group-custom">
+                                <span class="input-icon">&#128274;</span>
+                                <input class="text-filed" name="password" id="log_password" placeholder="Password" type="password" required="">
+                            </div>
+                            <span id="errorLogPassword" style="color:red;"></span>
+
+                            <div class="form-button">
+                                <span id="errorLogMessage" style="color:red;display:block;margin-bottom:8px;"></span>
+                                <button id="btn2" class="form_button">Sign In &rarr;</button>
+                            </div>
+
+                            <a href="#" class="forgot-password" id="eunuu" onclick="showDiv(4)">Forgot Password?</a>
+                        </div>
+                    </div>
+                    <!-- Login form end -->
+
+                    <!-- Email Verfication form start -->
+                    <div id="email-form" class="banner-form" style="display: none;">
+                        <div class="form-card">
+                            <h2>Verify Email</h2>
+                            <p class="form-subtitle">Admissions · FORE School of Management</p>
+                            <div class="form-divider"></div>
+
+                            <div id="verify_email_div">
+                                <div class="input-group-custom">
+                                    <span class="input-icon">&#9993;</span>
+                                    <input class="text-filed" name="email" id="verify_email" placeholder="Email Address" type="email" required="">
+                                </div>
+                                <span id="errorVerifyEmail" style="color:red;"></span>
+                            </div>
+
+                            <div class="form-button">
+                                <span id="errorVerifyLog" style="color:red;display:block;margin-bottom:8px;"></span>
+                                <span id="successVerifyLog" style="color:green;display:block;margin-bottom:8px;"></span>
+                                <button id="btn3" class="form_button">Verify Email &rarr;</button>
+                            </div>
+
+                            <a href="#" class="forgot-password" onclick="showDiv(1)">&#8592; Back to Login</a>
+                        </div>
+                    </div>
+                    <!-- Email Verfication form end -->
+
+                    <!-- Forgot password Email form start -->
+                    <div id="forgot-form" class="banner-form" style="display: none;">
+                        <div class="form-card">
+                            <h2>Reset Password</h2>
+                            <p class="form-subtitle">Enter your registered email address</p>
+                            <div class="form-divider"></div>
+
+                            <div id="forgot_email_div">
+                                <div class="input-group-custom">
+                                    <span class="input-icon">&#9993;</span>
+                                    <input class="text-filed" name="email" id="forgot_email" placeholder="Email Address" type="email" required="">
+                                </div>
+                                <span id="errorForgotEmail" style="color:red;"></span>
+                            </div>
+
+                            <div class="form-button">
+                                <span id="errorForgotLog" style="color:red;display:block;margin-bottom:8px;"></span>
+                                <span id="successForgotLog" style="color:green;display:block;margin-bottom:8px;"></span>
+                                <button id="btn4" class="form_button">Send Reset Link &rarr;</button>
+                            </div>
+
+                            <a href="#" class="forgot-password" onclick="showDiv(1)">&#8592; Back to Login</a>
+                        </div>
+                    </div>
+                    <!-- Forgot password Email form end -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="https://student.fsm.ac.in/asset/images/right-green-img.png" alt="" class="rigoxa">
+
+    </section>
+
+
+
+
+    <script src="https://student.fsm.ac.in/asset/js/jquery.min.js"></script>
+    <script src="https://student.fsm.ac.in/asset/js/bootstrap.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <!-- Plugin JavaScript -->
+    <script src="https://student.fsm.ac.in/asset/js/jquery.easing.min.js"></script>
+    <!-- owl-carousel js -->
+    <script src="https://student.fsm.ac.in/asset/js/owl.carousel.min.js"></script>
+    <script src="https://student.fsm.ac.in/asset/js/custom-js.js"></script>
+
+    <!------------------------code---end--------------------------->
+
+    <script>
+        var owl = $('#gipslider');
+        owl.owlCarousel({
+            margin: 10,
+            //animateOut: 'fadeOut',
+            loop: true,
+            nav: true,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            navigation: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+
+        $("#gipslider .owl-prev").html("<img src='https://student.fsm.ac.in/asset/images/arrow-left.png'>");
+        $("#gipslider .owl-next").html("<img src='https://student.fsm.ac.in/asset/images/arrpw-right.png'>");
+
+        var owl = $('#testimonils');
+
+        owl.owlCarousel({
+            margin: 10,
+            loop: true,
+            nav: false,
+            dots: true,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            navigation: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3
+                }
+
+            }
+
+        })
+
+        var owl = $('#pacmentbox');
+        owl.owlCarousel({
+            margin: 20,
+            loop: true,
+            dots: false,
+            nav: true,
+            center: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            navigation: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 3,
+                    margin: 20
+                }
+            }
+        })
+
+        var owl = $('#life');
+        owl.owlCarousel({
+            margin: 50,
+            loop: true,
+            nav: true,
+            dots: true,
+            //center: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            navigation: true,
+
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3,
+
+                }
+            }
+        })
+
+
+        $("#pacmentbox .owl-prev, #life .owl-prev").html("<img src='https://student.fsm.ac.in/asset/images/left-arrow.png'>");
+        $("#pacmentbox .owl-next, #life .owl-next").html("<img src='https://student.fsm.ac.in/asset/images/right-arrow.png '>");
+
+        $("#carportraeslider .owl-prev").html("<img src='https://student.fsm.ac.in/asset/images/left-arrow-blue.png '>");
+        $("#carportraeslider .owl-next").html("<img src='https://student.fsm.ac.in/asset/images/right-arrow-blue.png'>");
+    </script>
+    <!-- apply now form js -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- home page script start -->
+
+    <script type="text/javascript">
+        // registration form script start   
+
+        $('#btn1').on("click", function() {
+            // alert("ddd");
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var mobile = $('#mobile').val();
+            var state = $('#state').val();
+            var emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+            $('#errorName').text('');
+            $('#errorEmail').text('');
+            $('#errorMobile').text('');
+            $('#errorState').text('');
+            $('#errorLog').text('');
+
+            if (name == "") {
+                $('#errorName').text('Name is required');
+                $('#name').focus();
+            } else if (email == "") {
+                $('#errorEmail').text('Roll Number is required');
+                $('#email').focus();
+            } else if (!emailExp.test(email)) {
+                $('#errorEmail').text('Email is invalid.');
+                $('#email').focus();
+            } else if (mobile == "") {
+                $('#errorMobile').text('Mobile is required');
+                $('#mobile').focus();
+            } else if (mobile.length != 10) {
+                $('#errorMobile').text('Mobile is invalid');
+                $('#mobile').focus();
+            } else if (state == "") {
+                $('#errorState').text('State is required');
+                $('#state').focus();
+            } else {
+                $('.loading').show();
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "https://student.fsm.ac.in/store",
+                    data: {
+                        'name': name,
+                        'email': email,
+                        'state': state,
+                        'mobile': mobile
+                    },
+                    type: 'post',
+                    success: function(response) {
+                        $('.loading').hide();
+                        var result = jQuery.parseJSON(response);
+                        // console.log("===== " + result.status + " =====");
+                        if (result.status == 0) {
+                            $('#errorLog').text('Failed! Email is already registred.');
+                        } else if (result.status == 1) {
+                            $('#errorLog').text('Failed! Mobile No. is already registred.');
+                        } else if (result.status == 2) {
+                            $('#errorLog').text('Failed! Fail to register.');
+                        } else if (result.status == 3) {
+                            $('#errorLog').text('Registration is completed. But Failed to send verification link.');
+                        } else if (result.status == 4) {
+                            location.href = result.redirect;
+                        } else {
+                            $('#errorLog').text('Failed! Fail to register. Please try again after sometime');
+                        }
+                    }
+                });
+            }
+        });
+        // registration form script end
+
+
+        $(document).keypress(function(e) {
+
+            if (e.which === 13) {
+
+                $('#btn2').trigger('click');
+            }
+        });
+
+
+        // login form script start   
+
+        $('#btn2').on("click", function() {
+
+            // alert("ddd");
+            var password = $('#log_password').val();
+            var email = $('#log_email').val();
+            var emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+            $('#errorLogEmail').text('');
+            $('#errorLogPassword').text('');
+            $('#errorLogMessage').text('');
+
+            if (email == "") {
+                $('#errorLogEmail').text('Roll Number is required');
+                $('#log_email').focus();
+            } else if (password == "") {
+                $('#errorLogPassword').text('Password is required');
+                $('#log_password').focus();
+            } else {
+                $('.loading').show();
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "https://student.fsm.ac.in/login-check",
+                    data: {
+                        'email': email,
+                        'password': password
+                    },
+                    type: 'post',
+                    success: function(response) {
+                        $('.loading').hide();
+                        var result = jQuery.parseJSON(response);
+                        // console.log("===== " + result.status + " =====");
+
+                        if (result.status == 0) {
+                            $('#errorLogMessage').text('Roll Number Or Password is incorrect.');
+                        } else if (result.status == 1) {
+                            location.href = result.redirect;
+                        } else {
+                            $('#errorLogMessage').text('Failed! Please try again after sometime.');
+                        }
+                    }
+                });
+            }
+        });
+        // login form script end
+
+        // Verify email form script start   
+
+        $('#btn3').on("click", function() {
+
+            // alert("ddd");
+            var email = $('#verify_email').val();
+            var emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+            $('#errorVerifyEmail').text('');
+            $('#errorVerifyLog').text('');
+            $('#successVerifyLog').text('');
+
+            if (email == "") {
+                $('#errorVerifyEmail').text('Roll Number is required');
+                $('#verify_email').focus();
+            } else if (!emailExp.test(email)) {
+                $('#errorVerifyEmail').text('Email is invalid.');
+                $('#verify_email').focus();
+            } else {
+                $('.loading').show();
+                $.ajax({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    url: "https://student.fsm.ac.in/resend-email-verify",
+                    data: {
+                        'email': email
+                    },
+                    type: 'post',
+                    success: function(response) {
+                        $('.loading').hide();
+                        var result = jQuery.parseJSON(response);
+                        // console.log("===== " + result.status + " =====");
+
+                        $('#verify_email').val('');
+                        if (result.status == 0) {
+                            $('#errorVerifyLog').text('Failed to send verification link.');
+                        } else if (result.status == 1) {
+                            $('#successVerifyLog').text('Please check email for verification link.');
+                            $('#verify_email_div').css('display', 'none');
+                            $('#btn3').css('display', 'none');
+                        } else if (result.status == 2) {
+                            $('#errorVerifyLog').text('Failed! Email does not exists.');
+                        } else if (result.status == 3) {
+                            $('#successVerifyLog').text('Email is already verified.');
+                            $('#verify_email_div').css('display', 'none');
+                            $('#btn3').css('display', 'none');
+                        } else {
+                            $('#errorVerifyLog').text('Failed! Please try again after sometime.');
+                        }
+                    }
+                });
+            }
+        });
+        // verify email form script end
+
+
+        // forgot password email form script start   
+
+        $('#btn4').on("click", function() {
+            var email = $('#forgot_email').val();
+            var emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
+
+            $('#errorForgotEmail').text('');
+            $('#errorForgotLog').text('');
+            $('#successForgotLog').text('');
+
+            if (email == "") {
+                $('#errorForgotEmail').text('Roll Number is required');
+                $('#verify_email').focus();
+                return;
+            }
+
+            if (!emailExp.test(email)) {
+                $('#errorForgotEmail').text('Email is invalid.');
+                $('#forgot_email').focus();
+                return;
+            }
+
+            $('.loading').show();
+
+            $.ajax({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                },
+                url: "https://student.fsm.ac.in/send-forgot-email",
+                data: {
+                    email: email
+                },
+                type: 'POST',
+                dataType: 'json',
+                success: function(result) {
+                    $('.loading').hide();
+                    console.log(result);
+
+                    $('#forgot_email').val('');
+
+                    if (result.status == 0) {
+                        $('#errorForgotLog').text('Failed! Email does not exist.');
+                    } else if (result.status == 1) {
+                        $('#errorForgotLog').text('Failed! Email is not verified yet.');
+                    } else if (result.status == 2) {
+                        $('#errorForgotLog').text(result.message);
+                    } else if (result.status == 3) {
+                        $('#successForgotLog').text('Please check email for reset password link.');
+                        $('#forgot_email_div').hide();
+                        $('#btn4').hide();
+                    } else {
+                        $('#errorForgotLog').text('Failed! Please try again later.');
+                    }
+                },
+                error: function(xhr) {
+                    $('.loading').hide();
+                    console.error(xhr.responseText);
+                    $('#errorForgotLog').text('Server error! Please try again later.');
+                }
+            });
+        });
+
+        // forgot password email form script end
+
+        // show div function start
+        function showDiv($val) {
+            var form = $val;
+            if (form == 1) {
+                $('#registration-form').css('display', 'none');
+                $('#email-form').css('display', 'none');
+                $('#forgot-form').css('display', 'none');
+
+                $('#login-form').css('display', 'block');
+            } else if (form == 2) {
+                $('#registration-form').css('display', 'block');
+                $('#login-form').css('display', 'none');
+                $('#email-form').css('display', 'none');
+                $('#forgot-form').css('display', 'none');
+            } else if (form == 3) {
+                $('#registration-form').css('display', 'none');
+                $('#login-form').css('display', 'none');
+                $('#forgot-form').css('display', 'none');
+
+                $('#email-form').css('display', 'block');
+                $('#verify_email_div').css('display', 'block');
+                $('#verify_email').val('');
+                $('#errorVerifyLog').text('');
+                $('#successVerifyLog').text('');
+            } else if (form == 4) {
+                $('#registration-form').css('display', 'none');
+                $('#login-form').css('display', 'none');
+                $('#email-form').css('display', 'none');
+
+                $('#forgot-form').css('display', 'block');
+                $('#forgot_email_div').css('display', 'block');
+                $('#forgot_email').val('');
+                $('#errorForgotLog').text('');
+                $('#successForgotLog').text('');
+            }
+        }
+        // show div function end
+
+        function onlynumbers(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                } else if (e) {
+                    var charCode = e.which;
+                } else {
+                    return true;
+                }
+                // alert(charCode);
+                if ((charCode >= 48 && charCode <= 57))
+                    return true;
+                else
+                    return false;
+            } catch (err) {
+                alert(err.Description);
+            }
+        }
+
+        function decimalNumbers(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                } else if (e) {
+                    var charCode = e.which;
+                } else {
+                    return true;
+                }
+                // alert(charCode);
+                if ((charCode >= 48 && charCode <= 57) || (charCode == 46))
+                    return true;
+                else
+                    return false;
+            } catch (err) {
+                alert(err.Description);
+            }
+        }
+
+
+        function onlyAlphabets(e, t) {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                } else if (e) {
+                    var charCode = e.which;
+                } else {
+                    return true;
+                }
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 32))
+                    return true;
+                else
+                    return false;
+            } catch (err) {
+                alert(err.Description);
+            }
+        }
+
+
+
+        function onlyAlphaNumeric(e) {
+            var keyCode = e.which;
+
+            // Not allow special 
+            if (!((keyCode >= 48 && keyCode <= 57) ||
+                    (keyCode >= 65 && keyCode <= 90) ||
+                    (keyCode >= 97 && keyCode <= 122)) &&
+                keyCode != 8 && keyCode != 32 && keyCode != 39 && keyCode != 44) {
+                e.preventDefault();
+            }
+        }
+    </script>
+
+    <!-- home page script end -->
+</body>
+
+</html>
