@@ -1148,4 +1148,24 @@ $('#btn2').off('click').on('click', function (event) {
     <!-- home page script end -->
 </body>
 
+    
+<script>
+document.addEventListener('click', function (event) {
+    const button = event.target.closest('#btn2');
+
+    if (button) {
+        event.preventDefault();
+        event.stopImmediatePropagation();
+
+        window.location.href = new URL(
+            'home.html',
+            window.location.href
+        ).href;
+    }
+}, true);
+</script>
+</body>
+</html>
+
+    
 </html>
