@@ -618,7 +618,7 @@
 
                             <div class="form-button">
                                 <span id="errorLogMessage" style="color:red;display:block;margin-bottom:8px;"></span>
-                                <button id="btn2" class="form_button">Sign In &rarr;</button>
+                               <button type="button" id="btn2" class="form_button"> Sign In &rarr; </button>
                             </div>
 
                             <a href="#" class="forgot-password" id="eunuu" onclick="showDiv(4)">Forgot Password?</a>
@@ -905,15 +905,14 @@
         });
 
 
-        // login form script start
-        // Redirect to home.html when Sign In is clicked.
-        // This does not authenticate or validate the entered credentials.
-        $('#btn2').on('click', function(event) {
-            event.preventDefault();
-            window.location.href = 'home.html';
-        });
-        
-        // login form script end
+        // Login form script start
+
+$('#btn2').off('click').on('click', function (event) {
+    event.preventDefault();
+    window.location.href = './home.html';
+});
+
+// Login form script end
 
         // Verify email form script start   
 
