@@ -905,53 +905,14 @@
         });
 
 
-        // login form script start   
-
-        $('#btn2').on("click", function() {
-
-            // alert("ddd");
-            var password = $('#log_password').val();
-            var email = $('#log_email').val();
-            var emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
-
-            $('#errorLogEmail').text('');
-            $('#errorLogPassword').text('');
-            $('#errorLogMessage').text('');
-
-            if (email == "") {
-                $('#errorLogEmail').text('Roll Number is required');
-                $('#log_email').focus();
-            } else if (password == "") {
-                $('#errorLogPassword').text('Password is required');
-                $('#log_password').focus();
-            } else {
-                $('.loading').show();
-                $.ajax({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    },
-                    url: "https://student.fsm.ac.in/login-check",
-                    data: {
-                        'email': email,
-                        'password': password
-                    },
-                    type: 'post',
-                    success: function(response) {
-                        $('.loading').hide();
-                        var result = jQuery.parseJSON(response);
-                        // console.log("===== " + result.status + " =====");
-
-                        if (result.status == 0) {
-                            $('#errorLogMessage').text('Roll Number Or Password is incorrect.');
-                        } else if (result.status == 1) {
-                            location.href = result.redirect;
-                        } else {
-                            $('#errorLogMessage').text('Failed! Please try again after sometime.');
-                        }
-                    }
-                });
-            }
+        // login form script start
+        // Redirect to home.html when Sign In is clicked.
+        // This does not authenticate or validate the entered credentials.
+        $('#btn2').on('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'home.html';
         });
+        
         // login form script end
 
         // Verify email form script start   
