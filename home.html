@@ -1,0 +1,1124 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+<div class="container-fluid">
+     <footer style="position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    margin-left: -15px;
+    z-index: 99;
+   /* padding: 0px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    ">
+       <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <p style="color:#d6e0fb;text-align: center;font-size:12px;margin-bottom:7px;margin-top:5px">&copy; 2003 - 2024, All rights reserved with FORE School of Management &nbsp;&nbsp;
+        <!-- <a href="javascript:void(0)" onclick="openModalBtn()" style="">
+          <span style="color:#d6e0fb; float: right;margin-right: 11px;" >Need Support <i class="fas fa-question-circle" style="color: #ff6600;"></i></span>
+        </a> -->
+          </p>
+        </div>
+      </div>
+
+</footer>
+
+        
+</div>
+<script>
+  function openModalBtn() {
+    var modal = document.getElementById('exampleModal');
+    modal.style.display = 'block';
+    modal.classList.add('show');
+    modal.setAttribute('aria-hidden', 'false');
+  }
+</script>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header" style="background:#60466c;">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: white;">Support</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" onclick="hideModal()" style="color:white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>For more general academic support, reach out to our dedicated Academic Office team at +91-11-41242484.</p>
+        <p>Having technical difficulties accessing the portal? Please reach out to our IT Help Desk by emailing us at sw-support@fsm.ac.in</p>
+      </div>
+    </div>
+  </div>
+</div>
+and cliked out then model also hide
+<script>
+  function hideModal() {
+    var modal = document.getElementById('exampleModal');
+    modal.style.display = 'none';
+    modal.classList.remove('show');
+    modal.setAttribute('aria-hidden', 'true');
+  }
+</script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="GZvLQU5iwOXQH10xXr20MaeFC8H3hHX65cFYEvqy">
+    <meta name="" content="">
+    <title> </title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="https://student.fsm.ac.in/admin/images/favicon-36x36.png" type="image/png">
+	<link rel="icon" href="https://student.fsm.ac.in/admin/images/favicon-36x36.png" type="image/png">	
+	<!-- General CSS -->
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/all.min.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/datepicker/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/datatable/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/global.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/style.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/responsive.css">
+	<link rel="stylesheet" href="https://student.fsm.ac.in/admin/css/loader.css">
+
+
+
+	</head>
+<body>
+	<div id="loader-div">
+	    <div id="bars1">
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	      <span></span>
+	    </div>
+	</div>
+	<!--Top Navbar--> 
+<header class="be-header">
+  <div class="logo">
+    <a href="https://student.fsm.ac.in/student/dashboard">
+      <img src="https://student.fsm.ac.in/admin/images/logo.png" class="img-fluid" width="60%">
+    </a>
+    <!-- ul add by sachin rana -->
+    <ul class="top-navbar">
+  
+    <li class="bars-li" id="sidebarCollapse">
+      <span><i class="fas fa-bars"></i></span>
+    </li>
+</ul>
+<!-- end -->
+  </div>
+  <div class="left-sidebar">
+    <ul class="left-main-menu">
+      <li class="">
+        <a href="https://student.fsm.ac.in/student/dashboard">
+          <i class="fas fa-tachometer-alt" style="color: #ff6600;"></i><span style="color: black;">Dashboard</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://student.fsm.ac.in/student/profile">
+          <i class="fas fa-user" style="color: #ff6600;"></i><span style="color: black;">Profile</span>
+        </a>
+        
+        
+      </li>
+
+      <li>
+        <a href="https://student.fsm.ac.in/student/update-password">
+          <i class="fa fa-key" style="color: #ff6600;"></i><span style="color: black;">Change Password</span>
+        </a>
+        
+        
+      </li>
+
+      
+    </ul>
+  </div>
+  <ul class="top-navbar">
+    <!-- comment by sachin rana<li class="bars-li" id="sidebarCollapse">
+      <span><i class="fas fa-bars"></i></span>
+    </li> -->
+    <li>
+      <div class="profile-img"><img id="head_img" src="https://student.fsm.ac.in/studentimg/084015.jpg"></div>
+
+      <span class="user_info" style="color: black;"><strong>Divyansh Jain<br> 084015</strong></span>
+      
+      <ul class="sub-navbar">
+        <!-- <li><a href="https://student.fsm.ac.in/student/update-password"><i class="fas fa-user"></i> Change Password</a></li>  -->
+        <li>
+          <form id="logout-form" action="https://student.fsm.ac.in/logout" method="GET">
+            <button class="btn btn-sign-out" type="submit" id="admin_logout"><i class="fas fa-sign-out-alt"></i> Logout</button>
+          </form>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</header>
+<!--/Top Navbar/-->
+		
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --navy:    #0b1f3a;
+  --navy2:   #132d55;
+  --blue:    #1a56db;
+  --sky:     #3b82f6;
+  --accent:  #f59e0b;
+  --surface: #f4f7ff;
+  --card-bg: #ffffff;
+  --text-1:  #0f172a;
+  --text-2:  #475569;
+  --text-3:  #94a3b8;
+  --radius:  16px;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 6px; }
+
+/* ─── Page Shell ─── */
+.db-page {
+  min-height: 100vh;
+  background: var(--surface);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-1);
+}
+
+/* ════════════════════════════════
+   HERO
+════════════════════════════════ */
+.db-hero {
+  position: relative;
+  background: var(--navy);
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Animated mesh gradient */
+.db-hero-mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 55% 80% at 0% 50%,  rgba(26,86,219,0.55) 0%, transparent 65%),
+    radial-gradient(ellipse 40% 60% at 100% 0%, rgba(245,158,11,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 70% 100%,rgba(59,130,246,0.2) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+/* Dot grid */
+.db-hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.055) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+/* Floating rings */
+.db-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.06);
+  pointer-events: none;
+  animation: ring-spin 20s linear infinite;
+}
+.db-ring-1 { width: 500px; height: 500px; top: -200px; right: -120px; animation-duration: 25s; }
+.db-ring-2 { width: 300px; height: 300px; top: -80px;  right: 60px;  animation-direction: reverse; }
+.db-ring-3 { width: 100px; height: 100px; top: 30px;   right: 200px; animation-duration: 15s; }
+@keyframes  ring-spin { to { transform: rotate(360deg); } }
+
+.db-hero-body {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 3.5rem 1rem;
+}
+
+/* Eyebrow */
+.db-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 999px;
+  padding: 5px 14px 5px 8px;
+  margin-bottom: 0.5rem;
+}
+.db-eyebrow-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 0 3px rgba(52,211,153,0.2);
+  animation: pulse-dot 2.5s ease-in-out infinite;
+}
+@keyframes  pulse-dot {
+  0%,100% { box-shadow: 0 0 0 3px rgba(52,211,153,0.2); }
+  50%      { box-shadow: 0 0 0 6px rgba(52,211,153,0); }
+}
+.db-eyebrow span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.55);
+}
+
+/* Hero heading */
+.db-h1 {
+  font-family: 'Sora', sans-serif;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 0.75rem;
+}
+.db-h1 .hl {
+  position: relative;
+  display: inline-block;
+  color: var(--accent);
+}
+.db-h1 .hl::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -4px; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+/* Chips */
+.db-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.db-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 0.03em;
+}
+.db-chip i { font-size: 0.65rem; opacity: 0.7; }
+
+/* Right side — big decorative element */
+.db-hero-deco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  user-select: none;
+}
+.db-deco-ring {
+  position: relative;
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255,255,255,0.08);
+  display: flex; align-items: center; justify-content: center;
+}
+.db-deco-ring::before {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 1px dashed rgba(245,158,11,0.2);
+  animation: ring-spin 12s linear infinite;
+}
+.db-deco-ring::after {
+  content: '';
+  position: absolute;
+  inset: 25px;
+  border-radius: 50%;
+  background: rgba(26,86,219,0.15);
+  border: 1px solid rgba(59,130,246,0.2);
+}
+.db-deco-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.db-deco-inner .big {
+  font-family: 'Sora', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+.db-deco-inner .sm {
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+  margin-top: 2px;
+}
+/* Orbit dot */
+.db-orbit-dot {
+  position: absolute;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  top: 12px; left: 50%;
+  transform: translateX(-50%);
+  animation: ring-spin 6s linear infinite;
+  transform-origin: 50% 42px;
+}
+
+/* ─── Stats Bar ─── */
+.db-statsbar {
+  background: var(--navy2);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 0 3.5rem;
+  display: flex;
+  gap: 0;
+  overflow-x: auto;
+}
+.db-stat {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.6rem 2rem 0.6rem 0;
+  margin-right: 2.5rem;
+  border-right: 1px solid rgba(255,255,255,0.07);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.db-stat:last-child { border-right: none; }
+.db-stat-ico {
+  width: 34px; height: 34px;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem;
+}
+.si-blue   { background: rgba(59,130,246,0.15);  color: #60a5fa; }
+.si-green  { background: rgba(52,211,153,0.12);  color: #34d399; }
+.si-amber  { background: rgba(245,158,11,0.12);  color: #fbbf24; }
+.si-purple { background: rgba(167,139,250,0.12); color: #a78bfa; }
+.db-stat-txt .lbl {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(255,255,255,0.3);
+  font-weight: 500;
+}
+.db-stat-txt .val {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: -0.01em;
+}
+
+/* ════════════════════════════════
+   MAIN BODY
+════════════════════════════════ */
+.db-main {
+  padding: 2.5rem 3.5rem 4rem;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Alerts */
+.db-alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  font-size: 0.855rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  border: 1px solid;
+  animation: fadeSlideDown 0.4s ease both;
+}
+@keyframes  fadeSlideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.db-alert.ok  { background: #f0fdf4; border-color: #86efac; color: #166534; }
+.db-alert.err { background: #fef2f2; border-color: #fca5a5; color: #991b1b; }
+.db-alert .close-x { margin-left: auto; cursor: pointer; opacity: 0.5; font-size: 1rem; background: none; border: none; color: inherit; }
+.db-alert .close-x:hover { opacity: 1; }
+
+/* Section header */
+.db-sec-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2.25rem 0 1.25rem;
+}
+.db-sec-head:first-of-type { margin-top: 0; }
+.db-sec-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--navy);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 3px 10px;
+  white-space: nowrap;
+}
+.db-sec-pill i { font-size: 0.6rem; color: var(--accent); }
+.db-sec-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, #e2e8f0, transparent);
+}
+
+/* ─── Card Grid ─── */
+.db-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+/* ─── Card ─── */
+.db-card {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 2rem 1.75rem 1.75rem;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 6px 20px rgba(0,0,0,0.03);
+  text-decoration: none !important;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow: hidden;
+  transition: transform 0.2s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s ease;
+  animation: cardIn 0.5s ease both;
+  min-height: 150px;
+}
+.db-card:nth-child(1)  { animation-delay: 0.04s; }
+.db-card:nth-child(2)  { animation-delay: 0.08s; }
+.db-card:nth-child(3)  { animation-delay: 0.12s; }
+.db-card:nth-child(4)  { animation-delay: 0.16s; }
+.db-card:nth-child(5)  { animation-delay: 0.20s; }
+.db-card:nth-child(6)  { animation-delay: 0.24s; }
+@keyframes  cardIn {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Shimmer on hover */
+.db-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.6) 50%, rgba(255,255,255,0) 100%);
+  transform: translateX(-100%) skewX(-15deg);
+  transition: transform 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.db-card:hover::before { transform: translateX(200%) skewX(-15deg); }
+
+/* Accent top bar */
+.db-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--c1, #1a56db), var(--c2, #60a5fa));
+  border-radius: var(--radius) var(--radius) 0 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.db-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.1); text-decoration: none; }
+.db-card:hover::after { transform: scaleX(1); }
+
+/* Icon bubble */
+.db-ico-wrap {
+  width: 58px; height: 58px;
+  border-radius: 16px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.35rem;
+  background: var(--ib, #eff6ff);
+  color: var(--ic, #1a56db);
+  transition: transform 0.25s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.25s;
+  flex-shrink: 0;
+  position: relative; z-index: 2;
+}
+.db-card:hover .db-ico-wrap {
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.db-card-info { position: relative; z-index: 2; }
+.db-card-title {
+  font-family: 'Sora', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-1);
+  line-height: 1.35;
+  margin-bottom: 4px;
+}
+.db-card-desc {
+  font-size: 0.78rem;
+  color: var(--text-3);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Arrow */
+.db-arr {
+  position: absolute;
+  bottom: 1rem; right: 1rem;
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid #e2e8f0;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  transform: translate(4px, 4px);
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 2;
+  color: var(--ic, #1a56db);
+}
+.db-card:hover .db-arr { opacity: 1; transform: translate(0,0); }
+.db-arr i { font-size: 0.6rem; }
+
+/* NEW badge */
+.db-badge-new {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  background: linear-gradient(135deg,#ef4444,#dc2626);
+  color:#fff;
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 2px 6px;
+  vertical-align: middle;
+  margin-left: 5px;
+  animation: new-pulse 2s ease-in-out infinite;
+}
+@keyframes  new-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(239,68,68,0.4); }
+  50%      { box-shadow: 0 0 0 5px rgba(239,68,68,0); }
+}
+
+/* Disabled cards */
+.db-card-off {
+  opacity: 0.6;
+  background: #f8fafc;
+  border-style: dashed;
+  pointer-events: none;
+}
+.db-card-off:hover { transform: none; box-shadow: none; }
+.db-card-off:hover::after { transform: scaleX(0); }
+
+/* ─── Social Sidebar ─── */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.icon-bar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px; height: 36px;
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: width 0.2s;
+}
+.icon-bar a:hover { width: 44px; }
+
+/* Blinking */
+.blink_me { animation: blinker 1.5s linear infinite; }
+@keyframes  blinker { 50% { opacity: 0; } }
+
+/* ─── Responsive ─── */
+@media (max-width: 1100px) {
+  .db-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 900px) {
+  .db-hero-body  { padding: 1rem 1.5rem 0.75rem; grid-template-columns: 1fr; }
+  .db-hero-deco  { display: none; }
+  .db-statsbar   { padding: 0 1.5rem; }
+  .db-main       { padding: 2rem 1.5rem 3rem; }
+  .db-grid       { grid-template-columns: repeat(2,1fr); gap: 1rem; }
+}
+@media (max-width: 480px) {
+  .db-grid { grid-template-columns: repeat(2,1fr); gap: 0.7rem; }
+  .db-card { padding: 1.25rem 1rem; min-height: 130px; }
+  .db-ico-wrap { width: 46px; height: 46px; font-size: 1rem; }
+  .db-card-title { font-size: 0.82rem; }
+}
+</style>
+
+
+<div class="icon-bar">
+  <a href="https://www.linkedin.com/school/fore-school-of-management-new-delhi/" style="background:#007bb5" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+  <a href="https://www.facebook.com/foreschoolofmanagementdelhi" target="_blank" style="background:#3b5998"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/fore_delhi/" target="_blank" style="background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://twitter.com/FORE_Delhi" target="_blank" style="background:#1da1f2"><i class="fa-brands fa-twitter"></i></a>
+  <a href="https://www.youtube.com/user/FSMDelhi" target="_blank" style="background:#bb0000"><i class="fa-brands fa-youtube"></i></a>
+</div>
+
+
+<div class="db-page">
+
+  
+  <div class="db-hero">
+    <div class="db-hero-mesh"></div>
+    <div class="db-hero-grid"></div>
+    <div class="db-ring db-ring-1"></div>
+    <div class="db-ring db-ring-2"></div>
+    <div class="db-ring db-ring-3"></div>
+
+    <div class="db-hero-body">
+      <div>
+        <div class="db-eyebrow">
+         
+       
+        </div>
+        <h1 class="db-h1">
+          Student <span class="hl">Dashboard</span>
+        </h1>
+        <!-- <div class="db-chips">
+          <div class="db-chip"><i class="fa-solid fa-circle-dot" style="color:#34d399"></i> Active Session</div>
+          <div class="db-chip"><i class="fa-solid fa-id-badge"></i> 084015</div>
+          <div class="db-chip"><i class="fa-solid fa-location-dot"></i> New Delhi</div>
+        </div> -->
+      </div>
+
+      
+      <div class="db-hero-deco">
+        <div class="db-deco-ring">
+          <div class="db-orbit-dot"></div>
+          <div class="db-deco-inner">
+            <div class="big">FORE</div>
+            <div class="sm">Est. 1981</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="db-statsbar">
+      <div class="db-stat">
+        <div class="db-stat-ico si-blue"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="db-stat-txt"><div class="lbl">Roll Number </div><div class="val">084015</div></div>
+      </div>
+      <div class="db-stat">
+        <div class="db-stat-ico si-green"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="db-stat-txt"><div class="lbl">Batch</div><div class="val">2025-2027</div></div>
+      </div>
+      <div class="db-stat">
+        <div class="db-stat-ico si-amber"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="db-stat-txt"><div class="lbl">Campus</div><div class="val">New Delhi</div></div>
+      </div>
+      <div class="db-stat">
+        <div class="db-stat-ico si-purple"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="db-stat-txt"><div class="lbl">Status</div><div class="val" style="color:#34d399">Active</div></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="db-main">
+
+    
+        
+    
+    <div class="db-sec-head">
+      <div class="db-sec-pill"><i class="fa-solid fa-book-open"></i> Academics</div>
+      <div class="db-sec-line"></div>
+    </div>
+    <div class="db-grid">
+
+      <a href="https://student.fsm.ac.in/student/mycourse" class="db-card" style="--c1:#1a56db;--c2:#60a5fa;--ib:#eff6ff;--ic:#1a56db;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-th"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">My Course</div>
+          <div class="db-card-desc">View enrolled subjects</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/student-time-table" class="db-card" style="--c1:#7c3aed;--c2:#a78bfa;--ib:#f5f3ff;--ic:#7c3aed;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-calendar-days"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Class Timetable</div>
+          <div class="db-card-desc">Schedule &amp; timings</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/student-academic-calender" class="db-card" style="--c1:#0891b2;--c2:#22d3ee;--ib:#ecfeff;--ic:#0891b2;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-calendar-check"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Academic Calendar</div>
+          <div class="db-card-desc">2026 – 2027</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/studentmarksheet" class="db-card" style="--c1:#059669;--c2:#34d399;--ib:#ecfdf5;--ic:#059669;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-file-lines"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Mark Sheet</div>
+          <div class="db-card-desc">Grades &amp; results</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/admitcard" target="_blank" class="db-card" style="--c1:#d97706;--c2:#fbbf24;--ib:#fffbeb;--ic:#d97706;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-id-card"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Admit Card</div>
+          <div class="db-card-desc">Download &amp; print</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/iip" class="db-card" style="--c1:#be185d;--c2:#f472b6;--ib:#fdf2f8;--ic:#be185d;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">IIP Course Selection</div>
+          <div class="db-card-desc">Select your IIP</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+            <a href="https://ecampuselective.fsm.ac.in/dashboard/?key=084015&key1=" target="_blank" class="db-card" style="--c1:#0f766e;--c2:#2dd4bf;--ib:#f0fdfa;--ic:#0f766e;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-sliders"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Elective Choice System</div>
+          <div class="db-card-desc">ECS · New Delhi</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+      
+      
+    </div>
+
+    
+    <div class="db-sec-head">
+      <div class="db-sec-pill"><i class="fa-solid fa-star"></i> Student Services</div>
+      <div class="db-sec-line"></div>
+    </div>
+    <div class="db-grid">
+
+  
+      <!-- <a target="_blank" href="https://onlinefee.fsm.ac.in/feeportal/portal/process/MDg0MDE1" class="db-card" style="--c1:#1a56db;--c2:#60a5fa;--ib:#eff6ff;--ic:#1a56db;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-credit-card"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Fee Payment</div>
+          <div class="db-card-desc">Pay tuition &amp; dues</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a> -->
+
+      <a
+           target="_blank"
+        href="https://onlinefee.fsm.ac.in/feeportal/portal/process/MDg0MDE1"
+        class="db-card"
+    style="--c1:#1a56db;--c2:#60a5fa;--ib:#eff6ff;--ic:#1a56db;"
+>
+    <div class="db-ico-wrap">
+        <i class="fa-solid fa-credit-card"></i>
+    </div>
+
+    <div class="db-card-info">
+        <div class="db-card-title">Fee Payment</div>
+        <div class="db-card-desc">Pay tuition &amp; dues</div>
+    </div>
+
+    <div class="db-arr">
+        <i class="fa-solid fa-arrow-right"></i>
+    </div>
+</a>
+
+      <a href="https://student.fsm.ac.in/grievance" class="db-card" style="--c1:#dc2626;--c2:#f87171;--ib:#fff5f5;--ic:#dc2626;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-comments"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Grievance Redressal</div>
+          <div class="db-card-desc">Raise a complaint</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/selfeedbackdetails" class="db-card" style="--c1:#7c3aed;--c2:#a78bfa;--ib:#f5f3ff;--ic:#7c3aed;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-comment-dots"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Self Feedback</div>
+          <div class="db-card-desc">Submit your feedback</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/student/studentAffair" class="db-card" style="--c1:#0891b2;--c2:#22d3ee;--ib:#ecfeff;--ic:#0891b2;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Student Affairs</div>
+          <div class="db-card-desc">Notices &amp; information</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://www.fsm.ac.in/student-committees-as-per-aicte-guidelines" target="_blank" class="db-card" style="--c1:#059669;--c2:#34d399;--ib:#ecfdf5;--ic:#059669;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-gavel"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Regulations</div>
+          <div class="db-card-desc">AICTE compliances</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/appapk/apk.php" target="_blank" class="db-card" style="--c1:#16a34a;--c2:#4ade80;--ib:#f0fdf4;--ic:#16a34a;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Android App <span class="db-badge-new">New</span></div>
+          <div class="db-card-desc">Download student app</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/student/maf" class="db-card" style="--c1:#0f766e;--c2:#2dd4bf;--ib:#f0fdfa;--ic:#0f766e;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-file-signature"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Samrakshan - Mentoring Programme</div>
+          <div class="db-card-desc">MAF — View &amp; sign</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+<a href="https://student.fsm.ac.in/student/medical-leave" class="db-card" style="--c1:#0f766e;--c2:#2dd4bf;--ib:#f0fdfa;--ic:#0f766e;">
+  <div class="db-ico-wrap"><i class="fa-solid fa-file-signature"></i></div>
+  <div class="db-card-info">
+    <div class="db-card-title">Medical Leave Form</div>
+    <div class="db-card-desc">Apply for Medical Leave &amp; track status</div>
+  </div>
+  <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+</a>
+    </div>
+
+    
+    <div class="db-sec-head">
+      <div class="db-sec-pill"><i class="fa-solid fa-book"></i> Library Resources</div>
+      <div class="db-sec-line"></div>
+    </div>
+    <div class="db-grid">
+
+      <a href="https://student.fsm.ac.in/uploads/studentfiles/NVivo_Helpguide-converted.pdf" target="_blank" class="db-card" style="--c1:#1a56db;--c2:#60a5fa;--ib:#eff6ff;--ic:#1a56db;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-table-cells-large"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">NVivo Help Guide</div>
+          <div class="db-card-desc">Research tool guide</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+    <!--   <a href="https://www.portal.euromonitor.com/portal" target="_blank" class="db-card" style="--c1:#7c3aed;--c2:#a78bfa;--ib:#f5f3ff;--ic:#7c3aed;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-earth-asia"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Passport-Euromonitor</div>
+          <div class="db-card-desc">Market research data</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a> -->
+
+      <a href="https://student.fsm.ac.in/uploads/studentfiles/libraryeresourcesforstudents-2.pdf" target="_blank" class="db-card" style="--c1:#0891b2;--c2:#22d3ee;--ib:#ecfeff;--ic:#0891b2;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-database"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Library eResources</div>
+          <div class="db-card-desc">Digital resource guide</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/uploads/studentfiles/urkund-guide-to-student.pdf" target="_blank" class="db-card" style="--c1:#d97706;--c2:#fbbf24;--ib:#fffbeb;--ic:#d97706;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Urkund Guide</div>
+          <div class="db-card-desc">Plagiarism checker</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/uploads/studentfiles/BOK_Finals_2024-2026.pdf" target="_blank" class="db-card" style="--c1:#059669;--c2:#34d399;--ib:#ecfdf5;--ic:#059669;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-book-bookmark"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Book of Knowledge</div>
+          <div class="db-card-desc">Finals edition</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+      <a href="https://student.fsm.ac.in/uploads/studentfiles/BOK_Summers_2024-2026.pdf" target="_blank" class="db-card" style="--c1:#be185d;--c2:#f472b6;--ib:#fdf2f8;--ic:#be185d;">
+        <div class="db-ico-wrap"><i class="fa-solid fa-sun"></i></div>
+        <div class="db-card-info">
+          <div class="db-card-title">Book of Knowledge</div>
+          <div class="db-card-desc">Summers edition</div>
+        </div>
+        <div class="db-arr"><i class="fa-solid fa-arrow-right"></i></div>
+      </a>
+
+    </div>
+
+    
+    
+    
+    
+   <!--      <div class="db-sec-head">
+      <div class="db-sec-pill"><i class="fa-solid fa-handshake"></i> Mentoring</div>
+      <div class="db-sec-line"></div>
+    </div>
+    <div class="db-grid">
+              <div class="db-card db-card-off" style="--c1:#ef4444;--c2:#fca5a5;--ib:#fff5f5;--ic:#dc2626;">
+          <div class="db-ico-wrap"><i class="fa-solid fa-circle-xmark"></i></div>
+          <div class="db-card-info">
+            <div class="db-card-title">Mentoring Feedback</div>
+            <div class="db-card-desc">Expired 20 Feb, 10:00 AM</div>
+          </div>
+        </div>
+          </div>
+     -->
+
+  </div>
+</div>
+
+	<!-- JS Scripts -->
+<script src="https://student.fsm.ac.in/admin/js/jquery.min.js"></script>
+<script src="https://student.fsm.ac.in/admin/js/popper.min.js"></script>
+<script src="https://student.fsm.ac.in/admin/js/bootstrap.min.js"></script>
+
+
+
+<script type="text/javascript">
+  (function ($) {
+    $('#sidebarCollapse').on('click', function () {
+      $(this).find('span i').toggleClass('fa-times');
+      $('.left-sidebar').toggleClass('active');
+    });
+  }(jQuery));
+
+</script>
+
+<script type="text/javascript">
+  
+  function onlyAlphabets(e, t) {
+          try {
+              if (window.event) {
+                  var charCode = window.event.keyCode;
+              }
+              else if (e) {
+                  var charCode = e.which;
+              }
+              else { return true; }
+              if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 32))
+                  return true;
+              else
+                  return false;
+          }
+          catch (err) {
+              alert(err.Description);
+          }
+      } 
+
+      function onlyAlphabetsAndNumber(e, t) {
+          try {
+              if (window.event) {
+                  var charCode = window.event.keyCode;
+              }
+              else if (e) {
+                  var charCode = e.which;
+              }
+              else { return true; }
+              if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || (charCode == 32) || (charCode > 47 && charCode < 58)  )
+                  return true;
+              else
+                  return false;
+          }
+          catch (err) {
+              alert(err.Description);
+          }
+      }
+
+      function onlynumbers(e, t)
+          {
+            try {
+                if (window.event) {
+                    var charCode = window.event.keyCode;
+                }
+                else if (e) {
+                    var charCode = e.which;
+                }
+                else { return true; }
+                if ((charCode > 47 && charCode < 58)||(charCode==43)||(charCode==45)||(charCode==46))
+                    return true;
+                else
+                    return false;
+              }
+              catch (err) {
+                  alert(err.Description);
+              }
+          }
+
+function goBack() {
+  window.history.back();
+}
+
+</script>
+
+<!-- this is used to add script according to page. script written onn blade file start -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  let s = new Date("2026-02-17T14:00:00").getTime();
+  let e = new Date("2026-02-20T10:00:00").getTime();
+  let n = new Date().getTime();
+  if (n < s) setTimeout(() => location.reload(), s - n);
+  if (n < e) setTimeout(() => location.reload(), e - n);
+});
+</script>
+<!-- this is used to add script according to page. script written onn blade file end -->
+
+
+<!-- datatable js -->
+<script src="https://student.fsm.ac.in/admin/js/datatable/jquery.dataTables.min.js"></script>
+<script src="https://student.fsm.ac.in/admin/js/datatable/dataTables.bootstrap4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+</body>
+</html>
+
+
+
